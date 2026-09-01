@@ -1,0 +1,104 @@
+<div>
+  <!-- Alerts -->
+  <div class="alert alert-success alert-dismissible" ng-if="c.data.success" role="alert">
+    <button type="button" class="close" ng-click="c.data.success=null" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <span class="glyphicon glyphicon-ok-circle"></span> {{c.data.success}}
+  </div>
+  <div class="alert alert-danger" ng-if="c.data.error" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign"></span> {{c.data.error}}
+  </div>
+
+  <div ng-if="c.data.order">
+    <!-- Back button + Actions -->
+    <div class="clearfix" ng-style="{'margin-bottom': '16px'}">
+      <div class="pull-left">
+        <button type="button" class="btn btn-default sp-btn-secondary" ng-click="c.goBack()">
+          <span class="glyphicon glyphicon-chevron-left"></span> Back to Orders
+        </button>
+      </div>
+      <div class="pull-right sp-btn-group-inline">
+        <button type="button" class="btn btn-primary sp-btn-primary" ng-if="c.canSubmit()" ng-click="c.submitOrder()" ng-disabled="c.submitting">
+          <span class="glyphicon glyphicon-ok" ng-if="!c.submitting"></span>
+          <span class="glyphicon glyphicon-refresh" ng-if="c.submitting" ng-class="{'sp-spin': c.submitting}"></span>
+          Submit Order
+        </button>
+        <button type="button" class="btn btn-danger sp-btn-danger" ng-if="c.canCancel()" ng-click="c.cancelOrder()" ng-disabled="c.submitting">
+          <span class="glyphicon glyphicon-remove"></span> Cancel Order
+        </button>
+      </div>
+    </div>
+
+    <!-- Order Header -->
+    <div class="panel panel-default sp-card">
+      <div class="panel-heading sp-card-header">
+        <h3 class="panel-title sp-card-title">
+          <span class="glyphicon glyphicon-file sp-card-icon"></span>
+          Order {{c.data.order.number}}
+        </h3>
+        <span class="label" ng-class="c.getStateClass(c.data.order.state)">{{c.data.order.state_display}}</span>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <dl class="dl-horizontal">
+              <dt>Customer</dt><dd>{{c.data.order.customer}}</dd>
+              <dt>Order Type</dt><dd>{{c.data.order.order_type}}</dd>
+              <dt>Requested Date</dt><dd>{{c.data.order.requested_date || '—'}}</dd>
+            </dl>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <dl class="dl-horizontal">
+              <dt>Created</dt><dd>{{c.data.order.created_on}}</dd>
+              <dt>Completed</dt><dd>{{c.data.order.completed_date || '—'}}</dd>
+              <dt>External ID</dt><dd>{{c.data.order.external_order_id || '—'}}</dd>
+            </dl>
+          </div>
+        </div>
+        <div ng-if="c.data.order.description">
+          <strong>Description:</strong>
+          <p class="text-muted">{{c.data.order.description}}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Line Hierarchy -->
+    <div class="panel panel-default sp-card">
+      <div class="panel-heading sp-card-header">
+        <h3 class="panel-title sp-card-title">
+          <span class="glyphicon glyphicon-tree-conifer sp-card-icon"></span>
+          Order Line Hierarchy
+        </h3>
+        <span class="badge">{{c.data.orderLines.length}}</span>
+      </div>
+      <div class="panel-body" ng-if="c.data.tree.length > 0">
+        <!-- Recursive tree using ng-include -->
+        <script type="text/ng-template" id="tree_node.html">
+          <div class="sp-tree-node">
+            <div class="sp-tree-line">
+              <span class="glyphicon sp-tree-icon" ng-class="c.getLineTypeIcon(node.line_type_val)"></span>
+              <span class="sp-tree-name">
+                <strong>{{node.number}}</strong> — {{node.name || node.line_type}}
+              </span>
+              <span class="label label-info sp-tree-type">{{node.line_type}}</span>
+              <span class="label" ng-class="c.getStateClass(node.state)">{{node.state_display}}</span>
+              <span class="text-muted sp-tree-meta" ng-if="node.fulfillment_state">{{node.fulfillment_state}}</span>
+            </div>
+            <ul class="sp-tree-children" ng-if="node.children.length > 0">
+              <li ng-repeat="node in node.children track by node.sys_id" ng-include="'tree_node.html'"></li>
+            </ul>
+          </div>
+        </script>
+        <ul class="sp-tree-root">
+          <li ng-repeat="node in c.data.tree track by node.sys_id" ng-include="'tree_node.html'"></li>
+        </ul>
+      </div>
+      <div class="panel-body" ng-if="c.data.tree.length === 0">
+        <div class="sp-empty-state text-center">
+          <span class="glyphicon glyphicon-inbox sp-empty-icon"></span>
+          <h4 class="sp-empty-title">No order lines</h4>
+          <p class="text-muted">This order has no associated lines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

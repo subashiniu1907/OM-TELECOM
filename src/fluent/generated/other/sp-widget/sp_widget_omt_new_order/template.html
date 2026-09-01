@@ -1,0 +1,80 @@
+<div>
+  <div class="alert alert-danger" ng-if="c.data.error" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign"></span> {{c.data.error}}
+  </div>
+
+  <div class="panel panel-default sp-card">
+    <div class="panel-heading sp-card-header">
+      <h3 class="panel-title sp-card-title">
+        <span class="glyphicon glyphicon-plus sp-card-icon"></span>
+        Create New Order
+      </h3>
+    </div>
+    <div class="panel-body sp-card-body">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="form-group" ng-class="{'has-error': !c.form.customer && c.submitted}">
+            <label class="control-label" for="omt_customer">Customer <span class="text-danger">*</span></label>
+            <div class="sp-select-wrapper">
+              <select class="form-control sp-select" id="omt_customer" ng-model="c.form.customer">
+                <option value="">— Select Customer —</option>
+                <option ng-repeat="cust in c.data.customers track by cust.sys_id" value="{{cust.sys_id}}">{{cust.name}}</option>
+              </select>
+              <span class="sp-select-chevron glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="form-group">
+            <label class="control-label" for="omt_product">Product Offering</label>
+            <div class="sp-select-wrapper">
+              <select class="form-control sp-select" id="omt_product" ng-model="c.form.product_offering">
+                <option value="">— Select Product —</option>
+                <option ng-repeat="po in c.data.productOfferings track by po.sys_id" value="{{po.sys_id}}">{{po.name}} {{po.price ? '(' + po.currency + ' ' + po.price + ')' : ''}}</option>
+              </select>
+              <span class="sp-select-chevron glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="form-group">
+            <label class="control-label" for="omt_type">Order Type</label>
+            <div class="sp-select-wrapper">
+              <select class="form-control sp-select" id="omt_type" ng-model="c.form.order_type">
+                <option value="new">New</option>
+                <option value="change">Change</option>
+                <option value="disconnect">Disconnect</option>
+              </select>
+              <span class="sp-select-chevron glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="form-group">
+            <label class="control-label" for="omt_date">Requested Completion Date</label>
+            <input type="date" class="form-control sp-input" id="omt_date" ng-model="c.form.requested_date" placeholder="Select date" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="omt_desc">Description</label>
+        <textarea class="form-control sp-textarea" id="omt_desc" ng-model="c.form.description" placeholder="Enter order description..." rows="3"></textarea>
+      </div>
+
+      <div class="sp-btn-group">
+        <button type="button" class="btn btn-primary sp-btn-primary" ng-click="c.submit()" ng-disabled="c.submitting || !c.form.customer">
+          <span class="glyphicon glyphicon-ok" ng-if="!c.submitting"></span>
+          <span class="glyphicon glyphicon-refresh" ng-if="c.submitting" ng-class="{'sp-spin': c.submitting}"></span>
+          {{c.submitting ? 'Creating...' : 'Create Order'}}
+        </button>
+        <button type="button" class="btn btn-default sp-btn-secondary" ng-click="c.cancel()">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

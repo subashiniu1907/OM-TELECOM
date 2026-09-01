@@ -1,0 +1,38 @@
+/* Order Detail Widget Styles */
+.sp-card { display: flex; flex-direction: column; width: 100%; border: 1px solid $border-tertiary; border-radius: $border-radius-large; box-shadow: 0 1px 4px rgba($text-color, 0.07); background: $background-primary; overflow: hidden; margin-bottom: 24px; }
+.sp-card-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: $background-primary; border-bottom: 1px solid $border-tertiary; min-height: 52px; }
+.sp-card-title { font-size: $font-size-large; font-weight: 600; color: $text-color; margin: 0; }
+.sp-card-icon { margin-right: 8px; color: $brand-primary; font-size: 16px; }
+
+/* Buttons */
+.sp-btn-primary { height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; border: none; background: $brand-primary; color: $btn-primary-color; transition: background 0.15s;
+  &:hover:not(:disabled) { background: $brand-primary-dark; color: $btn-primary-color; }
+  &:disabled { opacity: 0.55; cursor: not-allowed; }
+}
+.sp-btn-secondary { background: $background-primary; border: 1px solid $border-tertiary; color: $text-color; height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; display: inline-flex; align-items: center; gap: 8px;
+  &:hover { background: $background-secondary; }
+}
+.sp-btn-danger { height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; border: none; background: $brand-danger; color: $btn-primary-color;
+  &:hover { background: darken($brand-danger, 8%); }
+}
+.sp-btn-group-inline { display: flex; gap: 8px; }
+
+@keyframes sp-spin { to { transform: rotate(360deg); } }
+.sp-spin { animation: sp-spin 0.8s linear infinite; }
+
+/* Tree */
+.sp-tree-root, .sp-tree-children { list-style: none; padding-left: 0; margin: 0; }
+.sp-tree-children { padding-left: 24px; border-left: 2px solid $border-tertiary; margin-left: 12px; }
+.sp-tree-node { padding: 4px 0; }
+.sp-tree-line { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: $border-radius-base; flex-wrap: wrap;
+  &:hover { background: $background-secondary; }
+}
+.sp-tree-icon { font-size: 16px; color: $brand-primary; flex-shrink: 0; }
+.sp-tree-name { font-size: $font-size-base; color: $text-color; }
+.sp-tree-type { font-size: 12px; }
+.sp-tree-meta { font-size: 12px; }
+
+/* Empty state */
+.sp-empty-state { padding: 64px 24px; }
+.sp-empty-icon { font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.35; color: $text-muted; }
+.sp-empty-title { font-size: $font-size-large; font-weight: 600; color: $text-color; margin-bottom: 8px; }

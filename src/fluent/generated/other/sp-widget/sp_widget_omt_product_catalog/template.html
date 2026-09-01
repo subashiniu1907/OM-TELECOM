@@ -1,0 +1,42 @@
+<div>
+  <div class="panel panel-default sp-card">
+    <div class="panel-heading sp-card-header">
+      <h3 class="panel-title sp-card-title">
+        <span class="glyphicon glyphicon-th sp-card-icon"></span>
+        Product Catalog
+      </h3>
+    </div>
+    <div class="panel-body sp-card-body">
+      <!-- Product grid -->
+      <div class="row sp-card-grid" ng-if="c.data.products.length > 0">
+        <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="product in c.data.products track by product.sys_id">
+          <div class="panel panel-default sp-product-card">
+            <div class="panel-heading">
+              <h4 class="panel-title sp-product-name">{{product.name}}</h4>
+              <span class="label" ng-class="c.getStatusClass(product.status_val)">{{product.status}}</span>
+            </div>
+            <div class="panel-body">
+              <p class="text-muted sp-product-spec" ng-if="product.product_spec">{{product.product_spec}}</p>
+              <p class="sp-product-desc" ng-if="product.description">{{product.description}}</p>
+              <div class="sp-product-price" ng-if="product.price">
+                <span class="sp-price-amount">{{product.currency}} {{product.price}}</span>
+              </div>
+            </div>
+            <div class="panel-footer text-right">
+              <button type="button" class="btn btn-primary btn-sm sp-btn-order" ng-click="c.orderProduct(product.sys_id)">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty state -->
+      <div class="sp-empty-state text-center" ng-if="c.data.products.length === 0">
+        <span class="glyphicon glyphicon-th sp-empty-icon"></span>
+        <h4 class="sp-empty-title">No products available</h4>
+        <p class="text-muted">No active product offerings found.</p>
+      </div>
+    </div>
+  </div>
+</div>

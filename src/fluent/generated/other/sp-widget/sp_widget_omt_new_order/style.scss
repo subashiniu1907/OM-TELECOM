@@ -1,0 +1,30 @@
+/* New Order Widget Styles */
+.sp-card { display: flex; flex-direction: column; width: 100%; border: 1px solid $border-tertiary; border-radius: $border-radius-large; box-shadow: 0 1px 4px rgba($text-color, 0.07); background: $background-primary; overflow: hidden; margin-bottom: 0; }
+.sp-card-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: $background-primary; border-bottom: 1px solid $border-tertiary; min-height: 52px; }
+.sp-card-title { font-size: $font-size-large; font-weight: 600; color: $text-color; margin: 0; }
+.sp-card-icon { margin-right: 8px; color: $brand-primary; font-size: 16px; }
+.sp-card-body { padding: 24px; flex: 1 1 auto; }
+
+/* Inputs */
+.sp-input { height: $input-height-base; border: 1px solid $border-tertiary; border-radius: $border-radius-base; padding: 0 12px; font-size: $font-size-base; color: $text-color; background: $background-primary; transition: border-color 0.15s, box-shadow 0.15s; width: 100%;
+  &:focus { border-color: $brand-primary; box-shadow: 0 0 0 3px rgba($brand-primary, 0.15); outline: none; }
+}
+.sp-select-wrapper { position: relative; }
+.sp-select { appearance: none; -webkit-appearance: none; padding-right: 36px; height: $input-height-base; border-radius: $border-radius-base; cursor: pointer; }
+.sp-select-chevron { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: $text-muted; pointer-events: none; font-size: 12px; }
+.sp-textarea { border-radius: $border-radius-base; border: 1px solid $border-tertiary; padding: 12px; font-size: $font-size-base; resize: vertical; min-height: 100px; transition: border-color 0.15s; width: 100%;
+  &:focus { border-color: $brand-primary; box-shadow: 0 0 0 3px rgba($brand-primary, 0.15); outline: none; }
+}
+
+/* Buttons */
+.sp-btn-primary { height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; border: none; background: $brand-primary; color: $btn-primary-color; transition: background 0.15s;
+  &:hover:not(:disabled) { background: $brand-primary-dark; color: $btn-primary-color; }
+  &:disabled { opacity: 0.55; cursor: not-allowed; }
+}
+.sp-btn-secondary { background: $background-primary; border: 1px solid $border-tertiary; color: $text-color; height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; display: inline-flex; align-items: center;
+  &:hover { background: $background-secondary; }
+}
+.sp-btn-group { display: flex; gap: 8px; align-items: center; margin-top: 24px; flex-wrap: wrap; }
+
+@keyframes sp-spin { to { transform: rotate(360deg); } }
+.sp-spin { animation: sp-spin 0.8s linear infinite; }

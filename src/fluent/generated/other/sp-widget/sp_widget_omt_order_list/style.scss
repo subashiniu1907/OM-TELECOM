@@ -1,0 +1,40 @@
+/* Order List Widget Styles */
+.sp-card { display: flex; flex-direction: column; width: 100%; border: 1px solid $border-tertiary; border-radius: $border-radius-large; box-shadow: 0 1px 4px rgba($text-color, 0.07); background: $background-primary; overflow: hidden; margin-bottom: 0; }
+.sp-card-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: $background-primary; border-bottom: 1px solid $border-tertiary; min-height: 52px; }
+.sp-card-title { font-size: $font-size-large; font-weight: 600; color: $text-color; margin: 0; }
+.sp-card-icon { margin-right: 8px; color: $brand-primary; font-size: 16px; }
+.sp-card-actions { display: flex; gap: 8px; }
+.sp-card-body-flush { padding: 0; flex: 1 1 auto; overflow: hidden; }
+
+.sp-btn-primary { height: 44px; padding: 0 20px; border-radius: $border-radius-base; font-size: $font-size-base; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; transition: background 0.15s, box-shadow 0.15s; cursor: pointer; border: none; background: $brand-primary; color: $btn-primary-color;
+  &:hover:not(:disabled) { background: $brand-primary-dark; box-shadow: 0 2px 8px rgba($brand-primary, 0.3); color: $btn-primary-color; }
+}
+
+/* Filter tabs */
+.sp-filter-tabs { display: flex; gap: 0; border-bottom: 1px solid $border-tertiary; background: $background-secondary; padding: 0 16px; flex-wrap: wrap; }
+.sp-filter-tab { background: transparent; border: none; border-bottom: 2px solid transparent; padding: 12px 16px; font-size: $font-size-small; color: $text-muted; cursor: pointer; transition: color 0.15s, border-color 0.15s; font-weight: 500;
+  &:hover { color: $text-color; }
+}
+.sp-filter-tab-active { color: $brand-primary; border-bottom-color: $brand-primary; }
+
+/* Table */
+.sp-th { font-size: 12px; font-weight: 600; color: $text-muted; text-transform: uppercase; letter-spacing: 0.04em; padding: 12px 16px; border-bottom: 2px solid $border-tertiary; background: $background-secondary; }
+.sp-td { font-size: $font-size-small; padding: 12px 16px; color: $text-color; border-bottom: 1px solid $border-tertiary; vertical-align: middle; }
+.sp-clickable-row { cursor: pointer;
+  &:hover { background: $background-secondary; }
+}
+
+/* Loading */
+.sp-loader { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px; color: $text-muted; }
+.sp-spinner { width: 36px; height: 36px; border: 3px solid $border-tertiary; border-top-color: $brand-primary; border-radius: 50%; animation: sp-spin 0.7s linear infinite; margin-bottom: 12px; }
+.sp-loader-text { font-size: $font-size-small; color: $text-muted; }
+@keyframes sp-spin { to { transform: rotate(360deg); } }
+
+/* Empty state */
+.sp-empty-state { padding: 64px 24px; }
+.sp-empty-icon { font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.35; color: $text-muted; }
+.sp-empty-title { font-size: $font-size-large; font-weight: 600; color: $text-color; margin-bottom: 8px; }
+
+/* Footer / Pagination */
+.sp-table-footer { padding: 8px 16px; font-size: 12px; color: $text-muted; border-top: 1px solid $border-tertiary; background: $background-secondary; }
+.sp-pagination { margin: 4px 0; }

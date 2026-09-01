@@ -1,0 +1,9 @@
+{
+    "scope": "x_973795_om_tele_0",
+    "scopeId": "43476b5dc38f4b10c7f77242b4013177",
+    "name": "OM Telecom",
+    "licensing": {
+        "enforceLicense": "none"
+    },
+    "description": "Telecom Order Management (OMT) application demonstrating a realistic telecom order management lifecycle from Product → Service → Resource → Order → Order Line → Fulfillment. Features configuration-driven order decomposition, dependency-based fulfillment, TMF-style REST APIs, and support for amend/cancel operations."
+}

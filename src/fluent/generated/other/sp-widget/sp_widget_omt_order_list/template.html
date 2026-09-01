@@ -1,0 +1,82 @@
+<div>
+  <div class="panel panel-default sp-card">
+    <div class="panel-heading sp-card-header">
+      <h3 class="panel-title sp-card-title">
+        <span class="glyphicon glyphicon-list-alt sp-card-icon"></span>
+        Orders
+      </h3>
+      <div class="sp-card-actions">
+        <button type="button" class="btn btn-primary sp-btn-primary" ng-click="c.navigateToNewOrder()">
+          <span class="glyphicon glyphicon-plus"></span> New Order
+        </button>
+      </div>
+    </div>
+    <div class="panel-body sp-card-body-flush">
+      <!-- Filter tabs -->
+      <div class="sp-filter-tabs">
+        <button type="button"
+                class="sp-filter-tab"
+                ng-repeat="tab in c.tabs track by tab.value"
+                ng-class="{'sp-filter-tab-active': c.activeFilter === tab.value}"
+                ng-click="c.setFilter(tab.value)">
+          {{tab.label}}
+        </button>
+      </div>
+
+      <!-- Loading -->
+      <div class="sp-loader" ng-if="c.loading">
+        <div class="sp-spinner"></div>
+        <p class="sp-loader-text">Loading...</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table table-hover" ng-if="!c.loading && c.data.orders.length > 0">
+        <thead>
+          <tr>
+            <th class="sp-th">Order #</th>
+            <th class="sp-th">Customer</th>
+            <th class="sp-th">Type</th>
+            <th class="sp-th">State</th>
+            <th class="sp-th">Requested Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sp-clickable-row" ng-repeat="order in c.data.orders track by order.sys_id" ng-click="c.navigateToOrder(order.sys_id)">
+            <td class="sp-td"><strong>{{order.number}}</strong></td>
+            <td class="sp-td">{{order.customer}}</td>
+            <td class="sp-td">{{order.order_type}}</td>
+            <td class="sp-td">
+              <span class="label" ng-class="c.getStateClass(order.state)">{{order.state_display}}</span>
+            </td>
+            <td class="sp-td">{{order.requested_date}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Empty state -->
+      <div class="sp-empty-state text-center" ng-if="!c.loading && c.data.orders.length === 0">
+        <span class="glyphicon glyphicon-inbox sp-empty-icon"></span>
+        <h4 class="sp-empty-title">No orders found</h4>
+        <p class="text-muted">Try adjusting your filter or create a new order.</p>
+      </div>
+    </div>
+
+    <!-- Pagination footer -->
+    <div class="panel-footer sp-table-footer" ng-if="c.data.totalPages > 1">
+      <div class="text-center">
+        <ul class="pagination pagination-sm sp-pagination">
+          <li ng-class="{'disabled': c.data.currentPage <= 1}">
+            <a ng-click="c.goToPage(c.data.currentPage - 1)" title="Previous">&laquo;</a>
+          </li>
+          <li ng-repeat="p in c.getPageRange() track by $index" ng-class="{'active': p === c.data.currentPage}">
+            <a ng-click="c.goToPage(p)">{{p}}</a>
+          </li>
+          <li ng-class="{'disabled': c.data.currentPage >= c.data.totalPages}">
+            <a ng-click="c.goToPage(c.data.currentPage + 1)" title="Next">&raquo;</a>
+          </li>
+        </ul>
+        <p class="text-muted" ng-bind="c.data.totalCount + ' order(s)'"></p>
+      </div>
+    </div>
+  </div>
+</div>
