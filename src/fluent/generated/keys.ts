@@ -5,9 +5,961 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    '01a9f6f4e0ac4e9c9572091ae0c8f0ec': {
+                        table: 'sys_app_application'
+                        id: '01a9f6f4e0ac4e9c9572091ae0c8f0ec'
+                    }
+                    '02211110280b47118ffa3b8178666b2c': {
+                        table: 'sp_rectangle_menu_item'
+                        id: '02211110280b47118ffa3b8178666b2c'
+                    }
+                    '02340f724be54feaa5274395a2f45207': {
+                        table: 'sp_container'
+                        id: '02340f724be54feaa5274395a2f45207'
+                    }
+                    '02447320b743421f8fe31ef946315d83': {
+                        table: 'sys_security_acl'
+                        id: '02447320b743421f8fe31ef946315d83'
+                    }
+                    '03dd00b8908d408cbc9168fcf2ea3c49': {
+                        table: 'sys_security_acl'
+                        id: '03dd00b8908d408cbc9168fcf2ea3c49'
+                    }
+                    '05be89bad4ad4e4ab583f763e6bce1be': {
+                        table: 'sys_ws_operation'
+                        id: '05be89bad4ad4e4ab583f763e6bce1be'
+                    }
+                    '0609707da0fa4708ad88fc46d8f2f054': {
+                        table: 'sp_instance'
+                        id: '0609707da0fa4708ad88fc46d8f2f054'
+                    }
+                    '0760ba51d16c430cb29a5f0d9abfb299': {
+                        table: 'sys_security_acl'
+                        id: '0760ba51d16c430cb29a5f0d9abfb299'
+                    }
+                    '07a39ceb20ee49a9892424532d2e7559': {
+                        table: 'sys_security_acl'
+                        id: '07a39ceb20ee49a9892424532d2e7559'
+                    }
+                    '07b59e99e1e24372b792e6309ec0b983': {
+                        table: 'sys_app_module'
+                        id: '07b59e99e1e24372b792e6309ec0b983'
+                    }
+                    '08e10a95d9da4df0abdadb0e66c71ce8': {
+                        table: 'sys_security_acl'
+                        id: '08e10a95d9da4df0abdadb0e66c71ce8'
+                    }
+                    '0ad7a64b96884afa909c1021e5aa9d03': {
+                        table: 'sys_ws_operation'
+                        id: '0ad7a64b96884afa909c1021e5aa9d03'
+                    }
+                    '0b98787bee8a404c9d39ae9e9fa73a08': {
+                        table: 'sys_app_module'
+                        id: '0b98787bee8a404c9d39ae9e9fa73a08'
+                    }
+                    '0c1ad239b95d46d79ea602233187e885': {
+                        table: 'sp_portal'
+                        id: '0c1ad239b95d46d79ea602233187e885'
+                    }
+                    '0c6a680e0e174a0394adccb086e404b4': {
+                        table: 'sys_security_acl'
+                        id: '0c6a680e0e174a0394adccb086e404b4'
+                    }
+                    '0d028b09ead145f09b2e2bc87845bcaa': {
+                        table: 'sys_script_include'
+                        id: '0d028b09ead145f09b2e2bc87845bcaa'
+                    }
+                    '0d02f135f1254c5393c8636032c812ea': {
+                        table: 'sys_ws_query_parameter'
+                        id: '0d02f135f1254c5393c8636032c812ea'
+                    }
+                    '0dba191e0ce34dd4aaea2cd0fbd54f4e': {
+                        table: 'sys_security_acl'
+                        id: '0dba191e0ce34dd4aaea2cd0fbd54f4e'
+                    }
+                    '0e3feba97e4d40fb935c0fb0e75bb2b3': {
+                        table: 'sys_security_acl'
+                        id: '0e3feba97e4d40fb935c0fb0e75bb2b3'
+                    }
+                    '0ec27b715a13472e83820aaf0b4c9c62': {
+                        table: 'sys_app_module'
+                        id: '0ec27b715a13472e83820aaf0b4c9c62'
+                    }
+                    '10af7bb42ba84eb7a4a04f85558eca70': {
+                        table: 'sp_column'
+                        id: '10af7bb42ba84eb7a4a04f85558eca70'
+                    }
+                    '1322196cd7004744b6973a6b736a31d3': {
+                        table: 'sys_security_acl'
+                        id: '1322196cd7004744b6973a6b736a31d3'
+                    }
+                    '148bc3e033de471f805bcbe2bcc24b7f': {
+                        table: 'sp_column'
+                        id: '148bc3e033de471f805bcbe2bcc24b7f'
+                    }
+                    '1658c44fcc68428f8c480a994165fb68': {
+                        table: 'sys_security_acl'
+                        id: '1658c44fcc68428f8c480a994165fb68'
+                    }
+                    '177b55b7da814e25a519e8d89bbbf16c': {
+                        table: 'sys_security_acl'
+                        id: '177b55b7da814e25a519e8d89bbbf16c'
+                    }
+                    '177e228c89cd4b5c8ed1756e1f27120e': {
+                        table: 'sp_instance'
+                        id: '177e228c89cd4b5c8ed1756e1f27120e'
+                    }
+                    '1a5fd4d0afab486d8874ea755b80d7ee': {
+                        table: 'sp_rectangle_menu_item'
+                        id: '1a5fd4d0afab486d8874ea755b80d7ee'
+                    }
+                    '1c9a089c1848421c9e11981a1207c334': {
+                        table: 'sys_app_module'
+                        id: '1c9a089c1848421c9e11981a1207c334'
+                    }
+                    '1e4a4593b51e4949870c9343a9fcd9a3': {
+                        table: 'sys_security_acl'
+                        id: '1e4a4593b51e4949870c9343a9fcd9a3'
+                    }
+                    '1efe80c3a2804699b5355982d3ad4c54': {
+                        table: 'sys_app_module'
+                        id: '1efe80c3a2804699b5355982d3ad4c54'
+                    }
+                    '215e7de9529445c283734bcf110e156c': {
+                        table: 'sys_security_acl'
+                        id: '215e7de9529445c283734bcf110e156c'
+                    }
+                    '225b9aefc3a943e9a92110fc3a5c7f8a': {
+                        table: 'sys_script_include'
+                        id: '225b9aefc3a943e9a92110fc3a5c7f8a'
+                    }
+                    '230b4f0f335a425ba5543df445253deb': {
+                        table: 'sys_security_acl'
+                        id: '230b4f0f335a425ba5543df445253deb'
+                    }
+                    '248cc2e8dfa64df695bc01f87b9dd850': {
+                        table: 'sp_widget'
+                        id: '248cc2e8dfa64df695bc01f87b9dd850'
+                    }
+                    '26fac83857584b049f9c5e51e3645976': {
+                        table: 'sp_row'
+                        id: '26fac83857584b049f9c5e51e3645976'
+                    }
+                    '271ddb8ed80546c28c06332884f5ec56': {
+                        table: 'sp_rectangle_menu_item'
+                        id: '271ddb8ed80546c28c06332884f5ec56'
+                    }
+                    '27cbabaa750d47b8b4b2678f528bb10c': {
+                        table: 'sys_security_acl'
+                        id: '27cbabaa750d47b8b4b2678f528bb10c'
+                    }
+                    '28e8a136809c445680a045a425496cbc': {
+                        table: 'sys_app_module'
+                        id: '28e8a136809c445680a045a425496cbc'
+                    }
+                    '298d4dfa4ca744dab8350330a8df88ce': {
+                        table: 'sys_app_module'
+                        id: '298d4dfa4ca744dab8350330a8df88ce'
+                    }
+                    '2a93ff1dc3038b10c7f77242b4013187': {
+                        table: 'sys_scope_privilege'
+                        id: '2a93ff1dc3038b10c7f77242b4013187'
+                    }
+                    '2b43912ef88248ef9d434437d6760014': {
+                        table: 'sp_row'
+                        id: '2b43912ef88248ef9d434437d6760014'
+                    }
+                    '2b770096d4764c3084dcb5486e98324e': {
+                        table: 'sys_security_acl'
+                        id: '2b770096d4764c3084dcb5486e98324e'
+                    }
+                    '2d1a2e5c530341e38f7d6259513774ab': {
+                        table: 'sys_security_acl'
+                        id: '2d1a2e5c530341e38f7d6259513774ab'
+                    }
+                    '2d68c4a20f3e496b87867e4361b15a3c': {
+                        table: 'sys_security_acl'
+                        id: '2d68c4a20f3e496b87867e4361b15a3c'
+                    }
+                    '2f31744ad1a046ecbc67d4f00d8829af': {
+                        table: 'sys_security_acl'
+                        id: '2f31744ad1a046ecbc67d4f00d8829af'
+                    }
+                    '2f9900840e7746bcb9c5d43ec28bff17': {
+                        table: 'sys_app_module'
+                        id: '2f9900840e7746bcb9c5d43ec28bff17'
+                    }
+                    '313b3cbecab54ac397f9b8ab9047a969': {
+                        table: 'sys_security_acl'
+                        id: '313b3cbecab54ac397f9b8ab9047a969'
+                    }
+                    '316e05b3f66a444abc614bdb764ab2de': {
+                        table: 'sp_instance'
+                        id: '316e05b3f66a444abc614bdb764ab2de'
+                    }
+                    '318b6037de9648d28624ef6289a5852e': {
+                        table: 'sys_security_acl'
+                        id: '318b6037de9648d28624ef6289a5852e'
+                    }
+                    '32c0caa068234daea0c93479cf4517e5': {
+                        table: 'sys_script'
+                        id: '32c0caa068234daea0c93479cf4517e5'
+                    }
+                    '3326b357d2454f828875dd8753dc0e11': {
+                        table: 'sys_security_acl'
+                        id: '3326b357d2454f828875dd8753dc0e11'
+                    }
+                    '34178769ffe1440a8f781600fdc9cae4': {
+                        table: 'sys_security_acl'
+                        id: '34178769ffe1440a8f781600fdc9cae4'
+                    }
+                    '34f3b2adb86a4b3083795a2069602098': {
+                        table: 'sys_ws_operation'
+                        id: '34f3b2adb86a4b3083795a2069602098'
+                    }
+                    '34f487c1154f400a866bf7c995c35de3': {
+                        table: 'sys_security_acl'
+                        id: '34f487c1154f400a866bf7c995c35de3'
+                    }
+                    '3542a0c1fc5b4e7ea81e3962552b36af': {
+                        table: 'sys_security_acl'
+                        id: '3542a0c1fc5b4e7ea81e3962552b36af'
+                    }
+                    '358bc2f754fd479fb528742acb8ab3d6': {
+                        table: 'sp_instance'
+                        id: '358bc2f754fd479fb528742acb8ab3d6'
+                    }
+                    '369457e542434c6cb66adb2c74c15484': {
+                        table: 'sys_security_acl'
+                        id: '369457e542434c6cb66adb2c74c15484'
+                    }
+                    '3b556359db274ae2902cec5cc51b7383': {
+                        table: 'sys_ws_query_parameter'
+                        id: '3b556359db274ae2902cec5cc51b7383'
+                    }
+                    '3b8f7ff7dc3d4c5498b74284fbd7c8dc': {
+                        table: 'sp_row'
+                        id: '3b8f7ff7dc3d4c5498b74284fbd7c8dc'
+                    }
+                    '3bf3e2f62664472ea2f715a57e18737e': {
+                        table: 'sys_security_acl'
+                        id: '3bf3e2f62664472ea2f715a57e18737e'
+                    }
+                    '3ccd2a31f048450f8af5e798a9a9083c': {
+                        table: 'sys_app_module'
+                        id: '3ccd2a31f048450f8af5e798a9a9083c'
+                    }
+                    '3e84374343b74715b9d471b92d88ffc6': {
+                        table: 'sys_security_acl'
+                        id: '3e84374343b74715b9d471b92d88ffc6'
+                    }
+                    '3fda47d9e870469b971a7f6d65aa7919': {
+                        table: 'sys_script'
+                        id: '3fda47d9e870469b971a7f6d65aa7919'
+                    }
+                    '4085f136fd56425d8ec89e2d459e9b97': {
+                        table: 'sys_app_module'
+                        id: '4085f136fd56425d8ec89e2d459e9b97'
+                    }
+                    '40b674b5c5c34d2c98a5439969ff05cb': {
+                        table: 'sys_security_acl'
+                        id: '40b674b5c5c34d2c98a5439969ff05cb'
+                    }
+                    '40bd871518914c5e8416ae89adcee182': {
+                        table: 'sys_security_acl'
+                        id: '40bd871518914c5e8416ae89adcee182'
+                    }
+                    '4192d745ee2d44499bafdaf89755bebf': {
+                        table: 'sys_app_module'
+                        id: '4192d745ee2d44499bafdaf89755bebf'
+                    }
+                    '41e4c65833b34c91931ea62c1196f036': {
+                        table: 'sys_script_include'
+                        id: '41e4c65833b34c91931ea62c1196f036'
+                    }
+                    '468354760d9940c385786c7b1437a9f3': {
+                        table: 'sys_security_acl'
+                        id: '468354760d9940c385786c7b1437a9f3'
+                    }
+                    '491dadd232a2453a9d9faf259d0cb087': {
+                        table: 'sys_security_acl'
+                        id: '491dadd232a2453a9d9faf259d0cb087'
+                    }
+                    '4a9a7213fed5406a9c5b0738dc85be31': {
+                        table: 'sys_script_include'
+                        id: '4a9a7213fed5406a9c5b0738dc85be31'
+                    }
+                    '4ab42e50825142a0bace0f10eba0752e': {
+                        table: 'sys_script'
+                        id: '4ab42e50825142a0bace0f10eba0752e'
+                    }
+                    '500bae1f42de41c2bab0cf93700ab1fa': {
+                        table: 'sys_security_acl'
+                        id: '500bae1f42de41c2bab0cf93700ab1fa'
+                    }
+                    '505e42955f2446dc868867512f8ede53': {
+                        table: 'sys_security_acl'
+                        id: '505e42955f2446dc868867512f8ede53'
+                    }
+                    '509e457eea0f4771819246748c3cf139': {
+                        table: 'sys_security_acl'
+                        id: '509e457eea0f4771819246748c3cf139'
+                    }
+                    '5147df0697f64e89b198540768a606f3': {
+                        table: 'sys_security_acl'
+                        id: '5147df0697f64e89b198540768a606f3'
+                    }
+                    '525561553b4e4c1998bc861094cd4470': {
+                        table: 'sys_security_acl'
+                        id: '525561553b4e4c1998bc861094cd4470'
+                    }
+                    '5263b2715a3348a58c83f9fdd00d23c5': {
+                        table: 'sys_script_include'
+                        id: '5263b2715a3348a58c83f9fdd00d23c5'
+                    }
+                    '54ccf06fb66b4c0898b177ff11541894': {
+                        table: 'sys_security_acl'
+                        id: '54ccf06fb66b4c0898b177ff11541894'
+                    }
+                    '5618aad31ee642f7a91efaa00122dd6a': {
+                        table: 'sys_app_module'
+                        id: '5618aad31ee642f7a91efaa00122dd6a'
+                    }
+                    '56a258cbf7d146c5bc7bb5a554fd417b': {
+                        table: 'sp_container'
+                        id: '56a258cbf7d146c5bc7bb5a554fd417b'
+                    }
+                    '56cb16fe85334618a74923dae6ec901c': {
+                        table: 'sys_script'
+                        id: '56cb16fe85334618a74923dae6ec901c'
+                    }
+                    '56de6972a44344ef9f0a4d8dcbc1ac79': {
+                        table: 'sys_ws_query_parameter'
+                        id: '56de6972a44344ef9f0a4d8dcbc1ac79'
+                    }
+                    '56fa5baa11314a998413b506a19207d2': {
+                        table: 'sys_security_acl'
+                        id: '56fa5baa11314a998413b506a19207d2'
+                    }
+                    '570de799c3cf4b10c7f77242b4013140': {
+                        table: 'sys_app_info'
+                        id: '570de799c3cf4b10c7f77242b4013140'
+                    }
+                    '5a21979ab0054126a1f96b1b67160a8f': {
+                        table: 'sys_app_module'
+                        id: '5a21979ab0054126a1f96b1b67160a8f'
+                    }
+                    '5a70d8bf15de40c5b8d9eefc942056bd': {
+                        table: 'sp_rectangle_menu_item'
+                        id: '5a70d8bf15de40c5b8d9eefc942056bd'
+                    }
+                    '5bc8b12ffa8c43acb5ad3eb9a7ac1219': {
+                        table: 'sys_security_acl'
+                        id: '5bc8b12ffa8c43acb5ad3eb9a7ac1219'
+                    }
+                    '5c6714f6fd1d4eb2974814e61faa80b0': {
+                        table: 'sys_ws_query_parameter'
+                        id: '5c6714f6fd1d4eb2974814e61faa80b0'
+                    }
+                    '5f070bbc17af4c5a84009e05339ea262': {
+                        table: 'sp_row'
+                        id: '5f070bbc17af4c5a84009e05339ea262'
+                    }
+                    '5f165b89acfa4c59b2623d0d02fdcb64': {
+                        table: 'sp_widget'
+                        id: '5f165b89acfa4c59b2623d0d02fdcb64'
+                    }
+                    '5f7bcd1f82954b679834d844d3361f44': {
+                        table: 'sys_ws_operation'
+                        id: '5f7bcd1f82954b679834d844d3361f44'
+                    }
+                    '61df51c4eb79417d9e4ac0a0d8486cc5': {
+                        table: 'sp_rectangle_menu_item'
+                        id: '61df51c4eb79417d9e4ac0a0d8486cc5'
+                    }
+                    '626a80eabc58414eaa9f03bc385211af': {
+                        table: 'sys_security_acl'
+                        id: '626a80eabc58414eaa9f03bc385211af'
+                    }
+                    '62bd225b76d04840ae8f567182eafc30': {
+                        table: 'sys_security_acl'
+                        id: '62bd225b76d04840ae8f567182eafc30'
+                    }
+                    '63261bcc953e47fdb1094d2ccedb35c7': {
+                        table: 'sys_security_acl'
+                        id: '63261bcc953e47fdb1094d2ccedb35c7'
+                    }
+                    '6563180a30c74918851415e9e76c66b9': {
+                        table: 'sp_container'
+                        id: '6563180a30c74918851415e9e76c66b9'
+                    }
+                    '662bd764b7634c47857a393ad73e8dcf': {
+                        table: 'sys_app_module'
+                        id: '662bd764b7634c47857a393ad73e8dcf'
+                    }
+                    '66648016c9de4cb49d4319e13c957630': {
+                        table: 'sys_security_acl'
+                        id: '66648016c9de4cb49d4319e13c957630'
+                    }
+                    '679a273ef66c4e84abc262de31a386e4': {
+                        table: 'sys_script'
+                        id: '679a273ef66c4e84abc262de31a386e4'
+                    }
+                    '69132fc6d5a7412ea2eb194f73fe1b35': {
+                        table: 'sp_widget'
+                        id: '69132fc6d5a7412ea2eb194f73fe1b35'
+                    }
+                    '6a3cb46c4b7a4e2392db46b4975d2784': {
+                        table: 'sp_instance'
+                        id: '6a3cb46c4b7a4e2392db46b4975d2784'
+                    }
+                    '6a8bd62929304288b8e4f463d71c70c3': {
+                        table: 'sys_security_acl'
+                        id: '6a8bd62929304288b8e4f463d71c70c3'
+                    }
+                    '6b55e848647d4ec8804fd767a720e3b4': {
+                        table: 'sp_instance'
+                        id: '6b55e848647d4ec8804fd767a720e3b4'
+                    }
+                    '6e26f848855c48629fd0a9289b8d0061': {
+                        table: 'sys_security_acl'
+                        id: '6e26f848855c48629fd0a9289b8d0061'
+                    }
+                    '6f18c2913e62462d84705c53dd5ffac1': {
+                        table: 'sys_app_module'
+                        id: '6f18c2913e62462d84705c53dd5ffac1'
+                    }
+                    '6f5b7603879d49d68cd48f5e8f0b9c50': {
+                        table: 'sp_container'
+                        id: '6f5b7603879d49d68cd48f5e8f0b9c50'
+                    }
+                    '6f84f2eb58024a558046d51e9515e943': {
+                        table: 'sys_app_module'
+                        id: '6f84f2eb58024a558046d51e9515e943'
+                    }
+                    '6fccda9d2c4149b08875e3f21a44eb13': {
+                        table: 'sys_security_acl'
+                        id: '6fccda9d2c4149b08875e3f21a44eb13'
+                    }
+                    '6ffa93227f384578807eecd74719eb98': {
+                        table: 'sys_ws_query_parameter'
+                        id: '6ffa93227f384578807eecd74719eb98'
+                    }
+                    '70177fd46f574c34a687f4dff399b8f6': {
+                        table: 'sys_script_include'
+                        id: '70177fd46f574c34a687f4dff399b8f6'
+                    }
+                    '7070241963294604b2a7d1f6dba04edb': {
+                        table: 'sys_security_acl'
+                        id: '7070241963294604b2a7d1f6dba04edb'
+                    }
+                    '7360958ded534617b25b5ae26e4e77ed': {
+                        table: 'sys_security_acl'
+                        id: '7360958ded534617b25b5ae26e4e77ed'
+                    }
+                    '7560f1d6356b4971867f17e2fd540e5b': {
+                        table: 'sys_security_acl'
+                        id: '7560f1d6356b4971867f17e2fd540e5b'
+                    }
+                    '760f087e59bd4a03b3e52ae2be51857b': {
+                        table: 'sys_app_module'
+                        id: '760f087e59bd4a03b3e52ae2be51857b'
+                    }
+                    '76a244f7865444c78e54549f1788072e': {
+                        table: 'sp_widget'
+                        id: '76a244f7865444c78e54549f1788072e'
+                    }
+                    '789c97e540d7432e88295d7433947421': {
+                        table: 'sp_column'
+                        id: '789c97e540d7432e88295d7433947421'
+                    }
+                    '7a2f775337a74a6483ed6cfb4a73356a': {
+                        table: 'sys_app_module'
+                        id: '7a2f775337a74a6483ed6cfb4a73356a'
+                    }
+                    '7a5a0426919f4b43b2747dc4abe759a2': {
+                        table: 'sys_script'
+                        id: '7a5a0426919f4b43b2747dc4abe759a2'
+                    }
+                    '7a758810ab344d20a33506ea1ee4c37c': {
+                        table: 'sys_app_module'
+                        id: '7a758810ab344d20a33506ea1ee4c37c'
+                    }
+                    '7ae8f4d13446420da03d2ae91a648c8a': {
+                        table: 'sys_security_acl'
+                        id: '7ae8f4d13446420da03d2ae91a648c8a'
+                    }
+                    '7bddd13afc2f4d659d3801273a635dbd': {
+                        table: 'sys_security_acl'
+                        id: '7bddd13afc2f4d659d3801273a635dbd'
+                    }
+                    '7dd55adc1ac043ba9844e0c7ed96bc78': {
+                        table: 'sys_security_acl'
+                        id: '7dd55adc1ac043ba9844e0c7ed96bc78'
+                    }
+                    '7f963f690490434bb3150e777d7c1459': {
+                        table: 'sys_ws_query_parameter'
+                        id: '7f963f690490434bb3150e777d7c1459'
+                    }
+                    '8150838516a54115b226d508946c10d9': {
+                        table: 'sys_security_acl'
+                        id: '8150838516a54115b226d508946c10d9'
+                    }
+                    '83f87bdfa24a49c2b490c4ca6bfce3d6': {
+                        table: 'sp_instance'
+                        id: '83f87bdfa24a49c2b490c4ca6bfce3d6'
+                    }
+                    '86435ce383c34f5aba8dc4973fb0b788': {
+                        table: 'sys_security_acl'
+                        id: '86435ce383c34f5aba8dc4973fb0b788'
+                    }
+                    '86635eeb6d4b464ab7527b6a0b85f430': {
+                        table: 'sp_column'
+                        id: '86635eeb6d4b464ab7527b6a0b85f430'
+                    }
+                    '87e3791d008340dcbfdaa3f101851b75': {
+                        table: 'sys_app_module'
+                        id: '87e3791d008340dcbfdaa3f101851b75'
+                    }
+                    '88d51e63625943f7b989d3b875fdfcd7': {
+                        table: 'sp_column'
+                        id: '88d51e63625943f7b989d3b875fdfcd7'
+                    }
+                    '88d550ffe1014f5fa81a3c387d8c34b0': {
+                        table: 'sys_app_module'
+                        id: '88d550ffe1014f5fa81a3c387d8c34b0'
+                    }
+                    '899be25113e44a0ca7fd5792503c2604': {
+                        table: 'sys_script_include'
+                        id: '899be25113e44a0ca7fd5792503c2604'
+                    }
+                    '8b8bedb0aff545498baf9f1270a9b621': {
+                        table: 'sys_app_module'
+                        id: '8b8bedb0aff545498baf9f1270a9b621'
+                    }
+                    '8c675d7ca94441718db03e99668f266a': {
+                        table: 'sp_row'
+                        id: '8c675d7ca94441718db03e99668f266a'
+                    }
+                    '8cb92d6d2129460fa2b412bef561937a': {
+                        table: 'sys_security_acl'
+                        id: '8cb92d6d2129460fa2b412bef561937a'
+                    }
+                    '8cd71b9811874d9e8efe5e89bdc4f553': {
+                        table: 'sys_app_module'
+                        id: '8cd71b9811874d9e8efe5e89bdc4f553'
+                    }
+                    '8d325b30d4af43c3951e0a330b796488': {
+                        table: 'sys_app_module'
+                        id: '8d325b30d4af43c3951e0a330b796488'
+                    }
+                    '8d8b164ae541441c811f47e658460ac9': {
+                        table: 'sp_row'
+                        id: '8d8b164ae541441c811f47e658460ac9'
+                    }
+                    '8de87f4fecbb432585bbedfa535fe11b': {
+                        table: 'sp_container'
+                        id: '8de87f4fecbb432585bbedfa535fe11b'
+                    }
+                    '8e92b20df67548568868690bfef2fca8': {
+                        table: 'sys_security_acl'
+                        id: '8e92b20df67548568868690bfef2fca8'
+                    }
+                    '8ed067e341f444dbbcbe016ada88089d': {
+                        table: 'sys_security_acl'
+                        id: '8ed067e341f444dbbcbe016ada88089d'
+                    }
+                    '8f4d19345228470da0f479c76b488101': {
+                        table: 'sys_security_acl'
+                        id: '8f4d19345228470da0f479c76b488101'
+                    }
+                    '90ecd81505c345c780751711ee24f7a1': {
+                        table: 'sp_container'
+                        id: '90ecd81505c345c780751711ee24f7a1'
+                    }
+                    '917bf2ae1ca64166a36702fca782a100': {
+                        table: 'sys_ws_operation'
+                        id: '917bf2ae1ca64166a36702fca782a100'
+                    }
+                    '936da84f06ab4dfe980beea7ca7807c1': {
+                        table: 'sys_script_include'
+                        id: '936da84f06ab4dfe980beea7ca7807c1'
+                    }
+                    a101fd0e79304dc690f1be6d977306f2: {
+                        table: 'sys_app_module'
+                        id: 'a101fd0e79304dc690f1be6d977306f2'
+                    }
+                    a1630d3cad324dd2a6efe4bfb7695a5e: {
+                        table: 'sys_security_acl'
+                        id: 'a1630d3cad324dd2a6efe4bfb7695a5e'
+                    }
+                    a2b2d100ff834b4c90eeba5dd5743bcb: {
+                        table: 'sys_app_module'
+                        id: 'a2b2d100ff834b4c90eeba5dd5743bcb'
+                    }
+                    a4c1e7c9b6ab41868227288dfdcfd71b: {
+                        table: 'sp_column'
+                        id: 'a4c1e7c9b6ab41868227288dfdcfd71b'
+                    }
+                    a53ec92167414e86b40209b08736f7fd: {
+                        table: 'sys_security_acl'
+                        id: 'a53ec92167414e86b40209b08736f7fd'
+                    }
+                    a5758349f443466b829975d355c3afbc: {
+                        table: 'sp_widget'
+                        id: 'a5758349f443466b829975d355c3afbc'
+                    }
+                    a747cd6cb44b45cbbd04060491548181: {
+                        table: 'sys_app_module'
+                        id: 'a747cd6cb44b45cbbd04060491548181'
+                    }
+                    a7a0cc72986a47399bc70573997970f1: {
+                        table: 'sys_ws_query_parameter'
+                        id: 'a7a0cc72986a47399bc70573997970f1'
+                    }
+                    a7d9213d03f14f8fabb74a296ca60d30: {
+                        table: 'sys_script'
+                        id: 'a7d9213d03f14f8fabb74a296ca60d30'
+                    }
+                    a8a10abd281d4e57960e88f7c20b013a: {
+                        table: 'sys_security_acl'
+                        id: 'a8a10abd281d4e57960e88f7c20b013a'
+                    }
+                    a952fb370f854f9dbf2d6e119a240a2c: {
+                        table: 'sys_script'
+                        id: 'a952fb370f854f9dbf2d6e119a240a2c'
+                    }
+                    ad5e864114ae44928d4c7b52411c8c0d: {
+                        table: 'sys_security_acl'
+                        id: 'ad5e864114ae44928d4c7b52411c8c0d'
+                    }
+                    ae0726cf85d7445a9794a1cfdf51235a: {
+                        table: 'sp_column'
+                        id: 'ae0726cf85d7445a9794a1cfdf51235a'
+                    }
+                    aef07373ea654287954fac8381bd5fa7: {
+                        table: 'sp_container'
+                        id: 'aef07373ea654287954fac8381bd5fa7'
+                    }
+                    af6ab2f1422d41e38c5b29f2ff10c952: {
+                        table: 'sys_security_acl'
+                        id: 'af6ab2f1422d41e38c5b29f2ff10c952'
+                    }
+                    af99c69fa25e4cb08ad449a5ad44fd45: {
+                        table: 'sys_app_module'
+                        id: 'af99c69fa25e4cb08ad449a5ad44fd45'
+                    }
+                    b0400b6e19a349a492c95f025b2005d8: {
+                        table: 'sys_security_acl'
+                        id: 'b0400b6e19a349a492c95f025b2005d8'
+                    }
+                    b30bfa81067d4a798687fd56971701bc: {
+                        table: 'sys_security_acl'
+                        id: 'b30bfa81067d4a798687fd56971701bc'
+                    }
+                    b378aa29b5ae4bfcbde84408769f2be9: {
+                        table: 'sys_security_acl'
+                        id: 'b378aa29b5ae4bfcbde84408769f2be9'
+                    }
+                    b3a912b8c7fb4c44807d013a37c5dcea: {
+                        table: 'sys_ws_query_parameter'
+                        id: 'b3a912b8c7fb4c44807d013a37c5dcea'
+                    }
+                    b4bcb6310915482882b171f207e16fdb: {
+                        table: 'sys_security_acl'
+                        id: 'b4bcb6310915482882b171f207e16fdb'
+                    }
+                    b4bda76fd44540fd9bb86a349421b5a1: {
+                        table: 'sys_ws_definition'
+                        id: 'b4bda76fd44540fd9bb86a349421b5a1'
+                    }
+                    b55edb3093914384bdc33aa7b24c9abc: {
+                        table: 'sys_ws_operation'
+                        id: 'b55edb3093914384bdc33aa7b24c9abc'
+                    }
+                    b6855df9af61498db8652f5fcdbb0777: {
+                        table: 'sys_script_include'
+                        id: 'b6855df9af61498db8652f5fcdbb0777'
+                    }
+                    b7f1bd3852cc4b88bff856fe33f1dae4: {
+                        table: 'sys_app_module'
+                        id: 'b7f1bd3852cc4b88bff856fe33f1dae4'
+                    }
+                    bac14ae02f224f4faba18b9c60bcc9ac: {
+                        table: 'sp_instance'
+                        id: 'bac14ae02f224f4faba18b9c60bcc9ac'
+                    }
+                    bb807cb31889469cb1f990e6adb8a693: {
+                        table: 'sys_security_acl'
+                        id: 'bb807cb31889469cb1f990e6adb8a693'
+                    }
+                    bb9233bc139d4809bc9ac4566dd81a4d: {
+                        table: 'sys_security_acl'
+                        id: 'bb9233bc139d4809bc9ac4566dd81a4d'
+                    }
+                    bba8192dc5694a65b385d28b06f024fc: {
+                        table: 'sys_script_include'
+                        id: 'bba8192dc5694a65b385d28b06f024fc'
+                    }
+                    bd13d597278245d5b1552db8c44c175f: {
+                        table: 'sys_script_include'
+                        id: 'bd13d597278245d5b1552db8c44c175f'
+                    }
+                    bdef4df4b06f4fbbbae28296585790e0: {
+                        table: 'sp_rectangle_menu_item'
+                        id: 'bdef4df4b06f4fbbbae28296585790e0'
+                    }
+                    bdf66dd9267d4092a8b50605caf2ec20: {
+                        table: 'sp_container'
+                        id: 'bdf66dd9267d4092a8b50605caf2ec20'
+                    }
+                    bfc697c79316417a9ed2bfbcf45343e4: {
+                        table: 'sys_security_acl'
+                        id: 'bfc697c79316417a9ed2bfbcf45343e4'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '0cc41eca496d41abba8a1688023007d5'
+                    }
+                    c0af06c344984dda9b20672759e5633c: {
+                        table: 'sys_security_acl'
+                        id: 'c0af06c344984dda9b20672759e5633c'
+                    }
+                    c2acd65490f84fe3b16ce67ff35a8a6a: {
+                        table: 'sp_instance_menu'
+                        id: 'c2acd65490f84fe3b16ce67ff35a8a6a'
+                    }
+                    c53650652bb84874b0363009cffe87f3: {
+                        table: 'sys_security_acl'
+                        id: 'c53650652bb84874b0363009cffe87f3'
+                    }
+                    c82b2bae39e94c3d920a9df867a80b4b: {
+                        table: 'sp_instance'
+                        id: 'c82b2bae39e94c3d920a9df867a80b4b'
+                    }
+                    c839f9d451c44f5bbed8a47c91322085: {
+                        table: 'sys_app_module'
+                        id: 'c839f9d451c44f5bbed8a47c91322085'
+                    }
+                    c86c100a23df42ca8040c51bed884e4f: {
+                        table: 'sp_row'
+                        id: 'c86c100a23df42ca8040c51bed884e4f'
+                    }
+                    c9e8fb646e814122907db7af3fd43018: {
+                        table: 'sys_security_acl'
+                        id: 'c9e8fb646e814122907db7af3fd43018'
+                    }
+                    ca1860fdf4194d499bb1a74697588624: {
+                        table: 'sys_security_acl'
+                        id: 'ca1860fdf4194d499bb1a74697588624'
+                    }
+                    ca2a4c2bd6584c0ba14a97c7f0dc464f: {
+                        table: 'sys_app_module'
+                        id: 'ca2a4c2bd6584c0ba14a97c7f0dc464f'
+                    }
+                    ca8d9dc3ed39471fac0a53953d4f643c: {
+                        table: 'sys_security_acl'
+                        id: 'ca8d9dc3ed39471fac0a53953d4f643c'
+                    }
+                    cb28661b31b44219a270181b19ee8215: {
+                        table: 'sys_security_acl'
+                        id: 'cb28661b31b44219a270181b19ee8215'
+                    }
+                    cb2b6b16e20c454fb2bc40c09aa2e834: {
+                        table: 'sys_security_acl'
+                        id: 'cb2b6b16e20c454fb2bc40c09aa2e834'
+                    }
+                    cbe2518006cb46f399ef46dcece8c47f: {
+                        table: 'sys_app_module'
+                        id: 'cbe2518006cb46f399ef46dcece8c47f'
+                    }
+                    cbfbe23527164814b957ac2b6005e5b4: {
+                        table: 'sys_security_acl'
+                        id: 'cbfbe23527164814b957ac2b6005e5b4'
+                    }
+                    cc49b8a573d2489596d873ec13e4b676: {
+                        table: 'sys_security_acl'
+                        id: 'cc49b8a573d2489596d873ec13e4b676'
+                    }
+                    ccc7f52a42034a8b946c925a5b4fb783: {
+                        table: 'sys_security_acl'
+                        id: 'ccc7f52a42034a8b946c925a5b4fb783'
+                    }
+                    ceaea07eb8ac4f9aa70b4789beb4bc3c: {
+                        table: 'sys_app_module'
+                        id: 'ceaea07eb8ac4f9aa70b4789beb4bc3c'
+                    }
+                    d03a6b05b3684de0917c5730e9997e63: {
+                        table: 'sys_security_acl'
+                        id: 'd03a6b05b3684de0917c5730e9997e63'
+                    }
+                    d22d69e32f8a4c8a8ecd466dd7cac497: {
+                        table: 'sys_app_application'
+                        id: 'd22d69e32f8a4c8a8ecd466dd7cac497'
+                    }
+                    d4900c37bc2c4f63ae5e7714a54a5956: {
+                        table: 'sys_ws_definition'
+                        id: 'd4900c37bc2c4f63ae5e7714a54a5956'
+                    }
+                    d607a7a1367e4a979f6703b5fb1ed11a: {
+                        table: 'sys_script'
+                        id: 'd607a7a1367e4a979f6703b5fb1ed11a'
+                    }
+                    d66b5ecbc6be42cf9ae51f9cb51db00b: {
+                        table: 'sys_app_module'
+                        id: 'd66b5ecbc6be42cf9ae51f9cb51db00b'
+                    }
+                    d7f85e402c5f4c6ab792e66917ae6920: {
+                        table: 'sys_app_module'
+                        id: 'd7f85e402c5f4c6ab792e66917ae6920'
+                    }
+                    d80124545ac0408b99ef5ba229895c4d: {
+                        table: 'sys_app_module'
+                        id: 'd80124545ac0408b99ef5ba229895c4d'
+                    }
+                    db844eaf6b414940890faa2774863673: {
+                        table: 'sys_security_acl'
+                        id: 'db844eaf6b414940890faa2774863673'
+                    }
+                    dca4f430c23740a3afc262c58651955c: {
+                        table: 'sys_app_module'
+                        id: 'dca4f430c23740a3afc262c58651955c'
+                    }
+                    e114307114f24899875d0a87a3abe83c: {
+                        table: 'sp_container'
+                        id: 'e114307114f24899875d0a87a3abe83c'
+                    }
+                    e1708ef4c7b14d8f81829cf9514aaec9: {
+                        table: 'sys_app_module'
+                        id: 'e1708ef4c7b14d8f81829cf9514aaec9'
+                    }
+                    e2d2ca16caf6447e861ae3ca8746111b: {
+                        table: 'sys_security_acl'
+                        id: 'e2d2ca16caf6447e861ae3ca8746111b'
+                    }
+                    e464e99630b348238dd91bab98f524e9: {
+                        table: 'sys_security_acl'
+                        id: 'e464e99630b348238dd91bab98f524e9'
+                    }
+                    e5805be2aa8a468985a5eab0638d2eaf: {
+                        table: 'sys_security_acl'
+                        id: 'e5805be2aa8a468985a5eab0638d2eaf'
+                    }
+                    e685bc1d24284b1b858ce8a161fcf098: {
+                        table: 'sp_instance'
+                        id: 'e685bc1d24284b1b858ce8a161fcf098'
+                    }
+                    e68ce3ca681047d2a8a15d8cbf299f99: {
+                        table: 'sp_rectangle_menu_item'
+                        id: 'e68ce3ca681047d2a8a15d8cbf299f99'
+                    }
+                    e6b3f97649ae44e0bc8791958f597f9c: {
+                        table: 'sp_rectangle_menu_item'
+                        id: 'e6b3f97649ae44e0bc8791958f597f9c'
+                    }
+                    e787581e07b14f3591ad3546d4e006b4: {
+                        table: 'sp_column'
+                        id: 'e787581e07b14f3591ad3546d4e006b4'
+                    }
+                    e83033c479644892b0c81c11fc76ced3: {
+                        table: 'sp_column'
+                        id: 'e83033c479644892b0c81c11fc76ced3'
+                    }
+                    e94bb029ebf142f4aa4f1e36975819c0: {
+                        table: 'sys_security_acl'
+                        id: 'e94bb029ebf142f4aa4f1e36975819c0'
+                    }
+                    e9be0df421584f3d8ff586c473674d60: {
+                        table: 'sys_security_acl'
+                        id: 'e9be0df421584f3d8ff586c473674d60'
+                    }
+                    ea18e6b3b27b43568cefc086232f49d2: {
+                        table: 'sys_app_module'
+                        id: 'ea18e6b3b27b43568cefc086232f49d2'
+                    }
+                    ea1cbe6f46af4c378fc52aa3e8b8d9f4: {
+                        table: 'sys_security_acl'
+                        id: 'ea1cbe6f46af4c378fc52aa3e8b8d9f4'
+                    }
+                    eade654d091d4e129b5899f82c39dd46: {
+                        table: 'sp_instance_menu'
+                        id: 'eade654d091d4e129b5899f82c39dd46'
+                    }
+                    eae3f4fc9a534f5b95849b2e7c7db192: {
+                        table: 'sys_security_acl'
+                        id: 'eae3f4fc9a534f5b95849b2e7c7db192'
+                    }
+                    ef275f69a09a486c864b6b5f8fc930ef: {
+                        table: 'sys_script'
+                        id: 'ef275f69a09a486c864b6b5f8fc930ef'
+                    }
+                    ef41d3d3401d431b909cce0d1291408e: {
+                        table: 'sp_column'
+                        id: 'ef41d3d3401d431b909cce0d1291408e'
+                    }
+                    effb87f12fcd41a6a4fcfd1f6f05006c: {
+                        table: 'sys_security_acl'
+                        id: 'effb87f12fcd41a6a4fcfd1f6f05006c'
+                    }
+                    f1954f74efc54cbdbaeb3d8023deb1d3: {
+                        table: 'sys_app_module'
+                        id: 'f1954f74efc54cbdbaeb3d8023deb1d3'
+                    }
+                    f57d3fcc809841eca43c407bc9f7404a: {
+                        table: 'sys_security_acl'
+                        id: 'f57d3fcc809841eca43c407bc9f7404a'
+                    }
+                    f5d9b71d62a44c11b7e09b9eac3f8014: {
+                        table: 'sys_security_acl'
+                        id: 'f5d9b71d62a44c11b7e09b9eac3f8014'
+                    }
+                    f72c9145823e4cb892289d1e11d50a1c: {
+                        table: 'sp_row'
+                        id: 'f72c9145823e4cb892289d1e11d50a1c'
+                    }
+                    f7d3723bc5df49228a82fc01abebc3d0: {
+                        table: 'sys_script_include'
+                        id: 'f7d3723bc5df49228a82fc01abebc3d0'
+                    }
+                    f8220b409eca4567be14248c5fe96506: {
+                        table: 'sys_app_module'
+                        id: 'f8220b409eca4567be14248c5fe96506'
+                    }
+                    f98a9ca2d9fb48c098937b60c6aaf523: {
+                        table: 'sp_row'
+                        id: 'f98a9ca2d9fb48c098937b60c6aaf523'
+                    }
+                    fb289aeabf8448e19ac98b018857f15e: {
+                        table: 'sys_app_module'
+                        id: 'fb289aeabf8448e19ac98b018857f15e'
+                    }
+                    fc294c94debd43c2b2d38e61e1bce152: {
+                        table: 'sp_container'
+                        id: 'fc294c94debd43c2b2d38e61e1bce152'
+                    }
+                    fc2a3f0080b74167825e86bad49bceed: {
+                        table: 'sys_app_module'
+                        id: 'fc2a3f0080b74167825e86bad49bceed'
+                    }
+                    fc323e73e9314d848858313b6232412d: {
+                        table: 'sys_security_acl'
+                        id: 'fc323e73e9314d848858313b6232412d'
+                    }
+                    fce168e5c8674f5ca7a3ff5b975e47bf: {
+                        table: 'sys_security_acl'
+                        id: 'fce168e5c8674f5ca7a3ff5b975e47bf'
+                    }
+                    fd6476f15f634344bdc0483a84f3b898: {
+                        table: 'sp_row'
+                        id: 'fd6476f15f634344bdc0483a84f3b898'
+                    }
+                    fe66bb32b9684215a8e717da04219bca: {
+                        table: 'sys_security_acl'
+                        id: 'fe66bb32b9684215a8e717da04219bca'
+                    }
+                    feed9c6b01d3460daa2dc83a6911f5ba: {
+                        table: 'sys_app_module'
+                        id: 'feed9c6b01d3460daa2dc83a6911f5ba'
                     }
                     package_json: {
                         table: 'sys_module'

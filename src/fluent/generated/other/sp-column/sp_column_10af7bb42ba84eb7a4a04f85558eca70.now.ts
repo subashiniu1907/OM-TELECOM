@@ -5,8 +5,8 @@ Record({
     table: 'sp_column',
     data: {
         order: 1,
-        size: '12',
-        size_sm: '12',
+        size: 12,
+        size_sm: 12,
         sp_row: 'f72c9145823e4cb892289d1e11d50a1c',
     },
 })

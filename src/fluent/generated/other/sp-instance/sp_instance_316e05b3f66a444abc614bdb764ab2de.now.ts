@@ -7,7 +7,7 @@ Record({
         active: true,
         advanced_placeholder_dimensions: false,
         async_load: false,
-        async_load_device_type: 'desktop,tablet,mobile',
+		async_load_device_type: 'desktop',
         async_load_trigger: 'viewport',
         color: 'default',
         order: 1,
